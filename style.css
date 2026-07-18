@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Determination";
-    src: url("fonts/DeterminationMonoWeb.ttf") format("truetype");
+    src: url("./fonts/DeterminationMonoWeb.ttf") format("truetype");
 }
 
 html, body {
@@ -10,7 +10,7 @@ html, body {
 
 body {
     background-color: black;
-    background-image: url("img/fondo.apng");
+    background-image: url("./img/fondo.apng");
     background-size: 75% auto;
     background-position: center top;
     background-repeat: no-repeat;
