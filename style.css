@@ -9,17 +9,15 @@ html, body {
 }
 
 body {
-    image-rendering: pixelated;
     background-color: black;
     background-image: url("./img/fondo.apng");
     background-size: 75% auto;
     background-position: center top;
     background-repeat: no-repeat;
 
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+
     font-family: "Determination", monospace;
     color: white;
-}
-
-.contenido {
-    height: 2000px;
 }
