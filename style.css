@@ -9,6 +9,7 @@ html, body {
 }
 
 body {
+    image-rendering: pixelated;
     background-color: black;
     background-image: url("./img/fondo.apng");
     background-size: 75% auto;
