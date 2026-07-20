@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Idiomas - DELTARUNE BYAR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Idiomas</h1>
+
+<div id="listaIdiomas"></div>
+
+<script>
+
+fetch("idiomas.json")
+.then(res => res.json())
+.then(idiomas => {
+
+    let lista = document.getElementById("listaIdiomas");
+
+    idiomas.forEach(idioma => {
+
+        let cuadro = document.createElement("div");
+        cuadro.className = "cuadroArchivo";
+
+        cuadro.innerHTML = `
+            <p><b>${idioma.nombre}</b></p>
+
+            <a class="boton"
+               href="${idioma.archivo}"
+               download="${idioma.nombre}.json">
+                Descargar
+            </a>
+        `;
+
+        lista.appendChild(cuadro);
+
+    });
+
+})
+.catch(() => {
+
+    document.getElementById("listaIdiomas").innerHTML =
+        "<p>No se pudieron cargar los idiomas.</p>";
+
+});
+
+</script>
+
+</body>
+</html>

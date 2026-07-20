@@ -1,0 +1,145 @@
+@font-face {
+    font-family: "Determination";
+    src: url("./fonts/DeterminationMonoWeb.ttf") format("truetype");
+}
+
+html, body {
+    margin: 0;
+    min-height: 100%;
+}
+
+body {
+    text-align: center;
+    background-color: black;
+    background-image: url("./img/fondo.apng");
+    background-size: 75% auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+
+    font-family: "Determination", monospace;
+    color: white;
+}
+
+.boton,
+.boton:link,
+.boton:visited,
+.boton:hover,
+.boton:active {
+    position: relative;
+    display: inline-block;
+
+    padding: 10px 20px;
+    background: #000000;
+    color: white;
+    border: 2px outset #ffffff;
+    border-radius: 2px;
+
+    text-decoration: none;
+    font-size: 13px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.boton:hover {
+    background: #000000;
+    font-family: "Determination", sans-serif;
+}
+
+.boton:active {
+    border-style: inset;
+    background: #B00000;
+    font-family: "Determination", sans-serif;
+}
+
+.boton {
+    position: relative;
+    display: inline-block;
+    font-family: "Determination", sans-serif;
+}
+
+.texto {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    margin-top: 8px;
+    width: 250px;
+
+    background: black;
+    color: white;
+    border: 1px solid white;
+    padding: 8px;
+
+    z-index: 10;
+}
+
+.boton:hover .texto {
+    display: block;
+}
+.selectorArchivo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+#nombreArchivo {
+    width: 230px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: white;
+    color: black;
+
+    border: 1px solid white;
+    box-sizing: border-box;
+
+    user-select: none;
+}
+
+.archivoBoton {
+    background: #ccc;
+    color: white;
+
+    padding: 10px 15px;
+    border: 1px solid white;
+
+    cursor: pointer;
+}
+
+.archivoBoton input {
+    display: none;
+}
+.cuadroArchivo {
+    display: inline-block;
+    background: black;
+    border: 3px solid white;
+    padding: 10px;
+}
+
+.selectorArchivo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+}
+
+.archivoBoton {
+    background: white;
+    color: black;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.archivoBoton input {
+    display: none;
+}
